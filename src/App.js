@@ -8,8 +8,8 @@ import './App.css';
 
 import Navbar from './components/navigation/Navbar';
 import Home from './components/pages/Home/Home';
-import Signup from './components/pages/Signup/Signup';
-import Login from './components/pages/Login/Login';
+import Signup from './components/pages/Auth/Signup/Signup';
+import Login from './components/pages/Auth/Login/Login';
 
 
 export default class App extends Component {
