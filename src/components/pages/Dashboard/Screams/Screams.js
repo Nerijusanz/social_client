@@ -4,9 +4,9 @@ import Grid from '@material-ui/core/Grid';
 
 import ScreamItem from './ScreamItem';
 
- 
 
 export default class Screams extends Component {
+
 
   state={
     screams:null,
