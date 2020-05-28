@@ -10,6 +10,7 @@ import Navbar from './components/navigation/Navbar';
 import Home from './components/pages/Home/Home';
 import Signup from './components/pages/Auth/Signup/Signup';
 import Login from './components/pages/Auth/Login/Login';
+import Screams from './components/pages/Dashboard/Screams/Screams';
 
 
 export default class App extends Component {
@@ -26,6 +27,7 @@ export default class App extends Component {
               <Route path="/" exact component={Home} />
               <Route path="/login" exact component={Login} />
               <Route path="/signup" exact component={Signup} />
+              <Route path="/screams" exact component={Screams} />
             </Switch>
             </div>
           </Router>

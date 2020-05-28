@@ -17,6 +17,7 @@ export default class Navbar extends Component {
       <AppBar>
         <Toolbar style={cssNavContainer}>
           <Button color="inherit" component={Link} to="/">Home</Button>
+          <Button color="inherit" component={Link} to="/screams">Screams</Button>
           <Button color="inherit" component={Link} to="/login">Login</Button>
           <Button color="inherit" component={Link} to="/signup">Signup</Button>
         </Toolbar>
