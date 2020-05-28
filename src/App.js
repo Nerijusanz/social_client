@@ -6,10 +6,10 @@ import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
 import './App.css';
 
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
+import Navbar from './components/navigation/Navbar';
+import Home from './components/pages/Home/Home';
+import Signup from './components/pages/Signup/Signup';
+import Login from './components/pages/Login/Login';
 
 
 export default class App extends Component {
