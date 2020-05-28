@@ -1,11 +1,33 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Link from 'react-router-dom/Link';
+
+
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
+
+
 
 export default class Navbar extends Component {
-  render() {
-    return (
-      <div>
-        Navbar
-      </div>
+
+  render(){
+
+    return(
+
+      <AppBar>
+        <Toolbar style={cssNavContainer}>
+          <Button color="inherit" component={Link} to="/">Home</Button>
+          <Button color="inherit" component={Link} to="/login">Login</Button>
+          <Button color="inherit" component={Link} to="/signup">Signup</Button>
+        </Toolbar>
+      </AppBar>
+
     )
   }
 }
+
+const cssNavContainer = {
+  margin: '0 auto',
+  maxWidth: '1200px'
+};
+
