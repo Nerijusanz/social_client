@@ -6,6 +6,7 @@ import axios from 'axios';
 import {Grid,Typography,TextField,Button,CircularProgress} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 
+import styles from './styles';
 import UserIcon from '../../../images/user.png'
 
 class Login extends Component {
@@ -152,30 +153,5 @@ class Login extends Component {
 Login.propTypes = {
   classes: PropTypes.object.isRequired
 }
-
-const styles = {
-  
-  container:{
-    textAlign:'center',
-    
-  },
-  userIcon:{
-    width:'64px',
-    height:'64px'
-  },
-  textField:{
-    margin:'10px auto'
-  },
-  submitButton:{
-    display:'flex',
-    justifyContent:'center',
-    margin:'20px auto'
-  },
-  errors:{
-    color:'red',
-    fontSize: '0.8rem'
-  }
-
-};
 
 export default withStyles(styles)(Login);
