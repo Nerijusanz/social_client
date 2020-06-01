@@ -31,12 +31,13 @@ class Login extends Component {
 
     try{
       this.setState({loading:true});
-      const login = await axios.post(API+'/auth/login',this.state.data);
+      const res = await axios.post(API+'/auth/login',this.state.data);
 
-      if(!login.data) return;
+      if(!res.data) return;
       
-      console.log(login.data);
+      console.log(res.data);
 
+      localStorage.setItem('SC_token',res.data.token);
 
       //this.setState({screams: screams.data});
 
